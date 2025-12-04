@@ -170,10 +170,10 @@ st.markdown('<div class="main-header">☕ 咖啡咖旅遊趣</div>', unsafe_allo
 st.markdown('<div class="sub-header">「選個為你專屬設計的城市之旅吧!」</div>', unsafe_allow_html=True)
 
 # 1. 旅伴與交通設定 (基本參數)
-st.markdown("##### 🚋 步驟 1：設定你的旅程參數")
+st.markdown("##### 🚋 步驟 1：沖泡您的旅程!")
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    group_type = st.selectbox("👥 這次跟誰去？", ["情侶/夫妻", "家庭親子", "好友", "獨旅", "長輩"])
+    group_type = st.selectbox("👥 與誰同行？", ["情侶/夫妻", "家庭親子", "好友", "獨旅", "長輩"])
 with col2:
     people_count = st.number_input("🔢 人數", 1, 50, 2)
 with col3:
@@ -182,7 +182,7 @@ with col4:
     transport = st.selectbox("🚗 交通", ["開車", "機車", "大眾運輸", "徒步"])
 
 # 2. 旅行願望 (移至此處，變成長框備註)
-st.markdown("##### 📝 步驟 2：寫下旅行想遇到的~!")
+st.markdown("##### 📝 步驟 2：寫下旅行的期望!")
 special_requests = st.text_area(
     label="旅行願望", # 隱藏標籤，使用上面的 markdown
     label_visibility="collapsed",
