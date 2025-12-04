@@ -4,10 +4,3 @@ Pillow
 requests
 beautifulsoup4
 pypdf
-
-### 如何執行這個新程式？
-
-1.  在 VS Code 的終端機 (Terminal) 中，確認您在該資料夾目錄下。
-2.  輸入以下指令來執行這個**獨立**的程式：
-    ```bash
-    streamlit run coffeeka_news.py
